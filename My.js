@@ -1,10 +1,9 @@
 "use strict";
-/*
+
 let userName = prompt(`What is your name?`);
 alert(`Hello ${userName} how are you?`);
-*/
 
-/*
+
 let userNumber = prompt(`Insert any three-digit number:`);
 
 let numberOne = userNumber[0];
@@ -26,10 +25,10 @@ else if (numberOne === numberTwo){
 }else if (numberOne === numberThree){
     console.log("Number 1 are equal to number 3");
 }
-*/
 
 
-/*
+
+
 let userBirth = prompt(`What is your date of birth?`);
 let userResidence = prompt(`What city do you live in?`);
 let userFavouriteSport = prompt(`What is your favourite sport?`);
@@ -49,10 +48,10 @@ if ( userAge !== null && userBirth !== null && userResidence !== null && userFav
         alert("Too bad you did not want to insert your favorite sport:((")
     }
 }
-*/
+
 
 // Додаткове дз;
-/*
+
 let sport = prompt(`What is your favorite sport?`);
 
 let favoriteSport = {
@@ -71,8 +70,7 @@ if (sport !== null && sport !== ""){
 }else {
     alert("Too bad u didnt choose any type of sport((")
 }
-*/
-/*
+
 let numOrStr = prompt('input number or string');
 console.log(numOrStr)
 switch (numOrStr){
@@ -90,4 +88,4 @@ switch (numOrStr){
 
 }
 
-*/
+
