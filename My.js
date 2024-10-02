@@ -33,7 +33,7 @@ let userBirth = prompt(`What is your date of birth?`);
 let userResidence = prompt(`What city do you live in?`);
 let userFavouriteSport = prompt(`What is your favourite sport?`);
 let userAge = 2024 - Number(userBirth);
-if ( userAge !== null && userBirth !== null && userResidence !== null && userFavouriteSport !== null){
+if ( userAge !== null && userAge <= 100 && userAge > 18 && userBirth !== null && userBirth !== ""  && userResidence !== null && userResidence !== "" && userFavouriteSport !== null && userFavouriteSport !== ""){
 
     alert(`Your age is ${userAge}`);
     alert(`You live in ${userResidence}`);
