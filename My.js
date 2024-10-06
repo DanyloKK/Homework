@@ -27,8 +27,8 @@ for (let i = 1; i <= 100; i++) {
 let num = prompt(`Insert the number to check!`);
 
 function checkNumber() {
-  if (num < 2) {
-    return alert(`Number is to small!`);
+  if (num < 2 || num === "" || num === null) {
+    return alert(`Number is to small or you did not insert the number!!!`);
   }
 
   for (let i = 3; i < num; i++) {
