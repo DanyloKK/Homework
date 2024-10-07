@@ -8,15 +8,15 @@ for (; number <= 30; number = number + 0.5) {
 let dollar = 10;
 let grivna = dollar * 26;
 while (dollar <= 100) {
-  let grivna = dollar * 26;
+  grivna = dollar * 26;
   console.log(grivna);
   dollar += 10;
 }
 
-let N = +prompt(`Insert the number:`);
+let numberInsert = +prompt(`Insert the number:`);
 
 for (let i = 1; i <= 100; i++) {
-  if (i * i < N) {
+  if (i * i <= numberInsert) {
     console.log(i);
   } else {
     break;
@@ -27,7 +27,7 @@ for (let i = 1; i <= 100; i++) {
 let num = prompt(`Insert the number to check!`);
 
 function checkNumber() {
-  if (num < 2 || num === "" || num === null) {
+  if (num < 2 || num === null) {
     return alert(`Number is to small or you did not insert the number!!!`);
   }
 
