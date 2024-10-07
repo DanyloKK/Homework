@@ -6,9 +6,8 @@ for (; number <= 30; number = number + 0.5) {
 }
 
 let dollar = 10;
-let grivna = dollar * 26;
 while (dollar <= 100) {
-  grivna = dollar * 26;
+  let grivna = dollar * 26;
   console.log(grivna);
   dollar += 10;
 }
