@@ -1,5 +1,81 @@
 "use strict";
 
+const arrayUsers = [2, 3, 4, 7, "Anton", 12, 35, "Pavel"];
+
+function arraySum() {
+  let arraySum = 0;
+  let arrayAverage = 0;
+  for (let i = 0; i < arrayUsers.length; i++) {
+    if (typeof arrayUsers[i] === "number") {
+      arraySum += arrayUsers[i];
+      arrayAverage = arraySum / i;
+    } else {
+      continue;
+    }
+  }
+  console.log(arrayAverage);
+}
+
+arraySum();
+
+const array = [1, 3, 4, 6, 2, 5, 7];
+
+function removeItem(item, itemNumber) {
+  let arrayDelete = array.splice(item, itemNumber);
+  console.log(array);
+}
+
+removeItem(3, 4);
+
+const arrayUser = [
+  0,
+  122,
+  522,
+  "true",
+  undefined,
+  null,
+  22,
+  true,
+  62,
+  77,
+  "Antosya",
+  55,
+  false,
+];
+
+function arrayChange(arrayElement) {
+  let newArray = arrayUser.filter((item) => item !== arrayElement);
+  console.log(newArray);
+}
+
+arrayChange(522);
+
+// Этот метод я использовал чтобы удалить не по номеру индекса а по значению
+
+let inputWord = prompt(`Insert the word!`);
+inputWord = inputWord.toLowerCase();
+let changeLetter = prompt(`Change its letter!`);
+
+function deleteLetter(word, letterToRemove) {
+  let result = word.split(letterToRemove).join("");
+  return result;
+}
+
+let resultFinal = deleteLetter(inputWord, changeLetter);
+console.log(resultFinal);
+//Или можно к в методе ниже;
+
+let inputWords = prompt(`Insert the word!`);
+let changeLetters = prompt(`Change its letter!`);
+
+function removeLetter(word, letterToRemove) {
+  let result1 = word.replace(letterToRemove, "");
+  console.log(result1);
+}
+
+removeLetter(inputWords, changeLetters);
+/*
+
 let number = 20;
 for (; number <= 30; number = number + 0.5) {
   console.log(number);
@@ -40,7 +116,7 @@ function checkNumber() {
 }
 
 checkNumber();
-
+*/
 /*
 let array = [];
 for (let number = 2; number <= 10; number++) {
