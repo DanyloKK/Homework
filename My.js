@@ -2,21 +2,21 @@
 
 const arrayUsers = [2, 3, 4, 7, "Anton", 12, 35, "Pavel"];
 
-function arraySum() {
+function arraySum(arrayUsers) {
   let arraySum = 0;
   let arrayAverage = 0;
   for (let i = 0; i < arrayUsers.length; i++) {
     if (typeof arrayUsers[i] === "number") {
       arraySum += arrayUsers[i];
-      arrayAverage = arraySum / i;
     } else {
       continue;
     }
+    arrayAverage = arraySum / i;
   }
   console.log(arrayAverage);
 }
 
-arraySum();
+arraySum(arrayUsers);
 
 const array = [1, 3, 4, 6, 2, 5, 7];
 
@@ -74,7 +74,81 @@ function removeLetter(word, letterToRemove) {
 }
 
 removeLetter(inputWords, changeLetters);
+
 /*
+
+function CreateObject(name, age, hobbies, occupation) {
+  this.name = name;
+  this.age = age;
+  this.hobbies = hobbies;
+  this.occupation = occupation;
+}
+
+const user1 = new CreateObject("Ivan", 22, "Football", "IT");
+const user2 = new CreateObject("Oleg", 35, "Gym", "Coach");
+const user3 = new CreateObject("Danyl", 24, "Gym", "IT");
+const user4 = new CreateObject("Dmytro", 29, "Computer games", "None");
+
+console.log(user1, user2, user3, user4);
+
+const userNew = JSON.parse(JSON.stringify(user1));
+console.log(userNew);
+const userNew1 = JSON.parse(JSON.stringify(user2));
+console.log(userNew1);
+//Добавляем
+const array = [2, 4, 7, 1, 6, 3, 9, 0];
+array.splice(2, 0, "Коля");
+console.log(array);
+
+// Замена
+const array1 = [2, 4, 7, 1, 6, 3, 9, 0];
+array1.splice(2, 1, "Кролик");
+console.log(array1);
+//Удаляем с конца
+const array2 = [2, 4, 7, 1, 6, 3, 9, 0];
+array2.splice(-5, 5);
+console.log(array2);
+//Copy  array without link
+const array3 = [2, 4, 7, 0];
+let arrayCopy = array3.slice();
+console.log(arrayCopy);
+arrayCopy.push(5);
+console.log(array3);
+
+// Тоже самое но ещё может добавить элемент
+const array4 = [2, 4, 7, 0];
+let arrayCopy1 = array4.concat(6);
+console.log(arrayCopy1);
+console.log(array4);
+console.log(arrayCopy1.indexOf(4));
+// ищю элемент 4 поиска начинается с 0
+console.log(arrayCopy1.indexOf(4, 0));
+console.log(arrayCopy1.includes(2));
+// ищю элемент 7 поиска начинается с 0
+console.log(arrayCopy1.includes(7, 0));
+
+const myArray = [
+  { name: "Ivan", age: 32, hobbies: "Футбол" },
+  { name: "Sasha", age: 35, hobbies: "Теннис" },
+  { name: "Nikita", age: 25, hobbies: "Футбол" },
+  { name: "Kiril", age: 27, hobbies: "Теннис" },
+  { name: "Dmytro", age: 45, hobbies: "Бейсбол" },
+  { name: "Vyacheslav", age: 21, hobbies: "Бейсбол" },
+];
+
+let method = myArray.findIndex(function (item, index, array) {
+  if (item.age >= 21) {
+    return item.age;
+  }
+});
+console.log(method);
+
+let arrTwo = [2, 6, 122, 22, 33];
+console.log(arrTwo.sort());
+console.log(arrTwo.sort((a, b) => a - b));
+
+
+
 
 let number = 20;
 for (; number <= 30; number = number + 0.5) {
