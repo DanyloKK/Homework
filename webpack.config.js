@@ -12,6 +12,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/, // Обрабатываем все файлы с расширением .scss
+        use: [
+          MiniCssExtractPlugin.loader,
+          "style-loader", // Вставляет стили в DOM
+          "css-loader", // Преобразует CSS в модули JavaScript
+          "sass-loader", // Компилирует SCSS в CSS
+        ],
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {

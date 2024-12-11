@@ -41,6 +41,19 @@ __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 
+/***/ }),
+
+/***/ "./styles/my.scss":
+/*!************************!*\
+  !*** ./styles/my.scss ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
 /***/ })
 
 /******/ 	});
@@ -122,7 +135,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var _node_modules_bootstrap_dist_js_bootstrap_bundle_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/bootstrap/dist/js/bootstrap.bundle.min */ "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js");
 /* harmony import */ var _node_modules_bootstrap_dist_js_bootstrap_bundle_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_bootstrap_dist_js_bootstrap_bundle_min__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_my_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/my.css */ "./styles/my.css");
+/* harmony import */ var _styles_my_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/my.scss */ "./styles/my.scss");
+/* harmony import */ var _styles_my_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/my.css */ "./styles/my.css");
+
 
 
 

@@ -1,7 +1,7 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
+import "../styles/my.scss";
 import "../styles/my.css";
-
 $(document).ready(function () {
   const form = $(".js--form");
   const button = $(".btn-success");
