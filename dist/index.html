@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homeworks Hillel</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/my.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">ToDoList</h1>
+    <form class="row g-3 js--form">
+        <div class="col-md-9">
+            <input type="text" name="value" required class="form-control js--form__input" placeholder="Введите задачу">
+        </div>
+        <div class="col-md-3 d-grid">
+            <button type="submit" class="btn btn-success">Додати</button>
+        </div>
+    </form>
+    <ul class="list-group mt-4 js--todos-wrapper">
+        <li class="list-group-item d-flex align-items-center justify-content-between">
+            <input type="checkbox" class="form-check-input">
+            <span class="ms-2 todo-item__description">Text</span>
+            <button class="btn btn-danger btn-sm">Видалити</button>
+        </li>
+        <li class="list-group-item d-flex align-items-center justify-content-between todo-item--checked">
+            <input type="checkbox" class="form-check-input" checked>
+            <span class="ms-2 todo-item__description">Text</span>
+            <button class="btn btn-danger btn-sm">Видалити</button>
+        </li>
+    </ul>
+</div>
+
+<div class="modal show" id="todoModal" tabindex="-1" aria-labelledby="todoModalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="todoModalLabel">Деталі завдання</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="todoDetails">Це приклад тексту завдання.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="module" src="../dist/bundle.js"></script>
+</body>
+</html>

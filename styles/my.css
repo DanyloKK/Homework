@@ -1,0 +1,18 @@
+body {
+    line-height: 1.2;
+    font-size: 18px;
+    background-color: #66deb2;
+}
+.background {
+    background:grey;
+}
+
+.todo-item--checked .todo-item__description {
+    text-decoration: line-through;
+}
+.modal-show{
+    display: block;
+}
+.style{
+    display: none;
+}

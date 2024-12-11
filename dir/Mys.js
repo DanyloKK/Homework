@@ -1,11 +1,10 @@
 "use strict";
 
-const arrayUsers = [2, 3, 4, 7, "Anton", 12, 35, "Pavel"];
-
+var arrayUsers = [2, 3, 4, 7, "Anton", 12, 35, "Pavel"];
 function arraySum(arrayUsers) {
-  let arraySum = 0;
-  let arrayAverage = 0;
-  for (let i = 0; i < arrayUsers.length; i++) {
+  var arraySum = 0;
+  var arrayAverage = 0;
+  for (var i = 0; i < arrayUsers.length; i++) {
     if (typeof arrayUsers[i] === "number") {
       arraySum += arrayUsers[i];
     } else {
@@ -15,64 +14,41 @@ function arraySum(arrayUsers) {
   }
   console.log(arrayAverage);
 }
-
 arraySum(arrayUsers);
-
-const array = [1, 3, 4, 6, 2, 5, 7];
-
+var array = [1, 3, 4, 6, 2, 5, 7];
 function removeItem(item, itemNumber) {
-  let arrayDelete = array.splice(item, itemNumber);
+  var arrayDelete = array.splice(item, itemNumber);
   console.log(array);
 }
-
 removeItem(3, 4);
-
-const arrayUser = [
-  0,
-  122,
-  522,
-  "true",
-  undefined,
-  null,
-  22,
-  true,
-  62,
-  77,
-  "Antosya",
-  55,
-  false,
-];
-
+var arrayUser = [0, 122, 522, "true", undefined, null, 22, true, 62, 77, "Antosya", 55, false];
 function arrayChange(arrayElement) {
-  let newArray = arrayUser.filter((item) => item !== arrayElement);
+  var newArray = arrayUser.filter(function (item) {
+    return item === arrayElement;
+  });
   console.log(newArray);
 }
-
-arrayChange(522);
+arrayChange("522");
 
 // Этот метод я использовал чтобы удалить не по номеру индекса а по значению
 
-let inputWord = prompt(`Insert the word!`);
+var inputWord = prompt("Insert the word!");
 inputWord = inputWord.toLowerCase();
-let changeLetter = prompt(`Change its letter!`);
-
+var changeLetter = prompt("Change its letter!");
 function deleteLetter(word, letterToRemove) {
-  let result = word.split(letterToRemove).join("");
+  var result = word.split(letterToRemove).join("");
   return result;
 }
-
-let resultFinal = deleteLetter(inputWord, changeLetter);
+var resultFinal = deleteLetter(inputWord, changeLetter);
 console.log(resultFinal);
 //Или можно к в методе ниже;
 
-let inputWords = prompt(`Insert the word!`);
-let changeLetters = prompt(`Change its letter!`);
-
+var inputWords = prompt("Insert the word!");
+var changeLetters = prompt("Change its letter!");
 function removeLetter(word, letterToRemove) {
-  let result1 = word.replace(letterToRemove, "");
+  var result1 = word.replace(letterToRemove, "");
   console.log(result1);
 }
-
 removeLetter(inputWords, changeLetters);
 
 /*
